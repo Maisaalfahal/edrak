@@ -344,6 +344,67 @@
              
         }
 
+        @media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* تغيير الاتجاه إلى عمودي */
+        align-items: center; /* محاذاة العناصر في المنتصف */
+        padding: 10px; /* تقليل الحشوة */
+    }
+
+    .nav-list {
+        flex-direction: column; /* تغيير الاتجاه إلى عمودي */
+        width: 100%; /* جعل القائمة تأخذ العرض الكامل */
+        padding: 0; /* إزالة الحشوة */
+    }
+
+    .nav-list li {
+        margin: 5px 0; /* إضافة مسافة أقل بين العناصر */
+    }
+
+    .book {
+        width: 95%; /* جعل عرض الكتاب 95% من العرض */
+        margin: 10px auto; /* محاذاة الكتاب في المنتصف */
+    }
+
+    .header {
+        flex-direction: column; /* جعل العناصر تتراص عموديًا */
+        text-align: center; /* محاذاة النص في المنتصف */
+        padding: 10px; /* تقليل الحشوة */
+    }
+
+    .rightNav {
+        flex-direction: column; /* جعل عناصر البحث تتراص عموديًا */
+        align-items: center; /* محاذاة العناصر في المنتصف */
+        margin-top: 10px; /* إضافة مسافة بين العناصر */
+    }
+
+    #search-input {
+        width: 80%; /* جعل حقل البحث يأخذ عرض أكبر */
+        margin-bottom: 10px; /* إضافة مسافة أسفل حقل البحث */
+    }
+
+    #search-button {
+        width: 80%; /* جعل زر البحث يأخذ عرض أكبر */
+    }
+}@media (max-width: 768px) {
+    .nav-list {
+        flex-direction: row; /* الحفاظ على الاتجاه الأفقي */
+        flex-wrap: wrap; /* السماح بالتفاف العناصر */
+        justify-content: center; /* محاذاة العناصر في المنتصف */
+        padding: 0; /* إزالة الحشوة */
+    }
+
+    .nav-list li {
+        margin: 5px; /* إضافة مسافة بين العناصر */
+    }
+
+    .nav-list li a {
+        font-size: 14px; /* تصغير حجم الخط */
+        padding: 5px 10px; /* تقليل الحشوة حول الروابط */
+    }
+}
+
+
     </style>
 </head>
 
