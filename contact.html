@@ -217,6 +217,20 @@ nav ul li a {
     text-decoration: none;
     
 }
+@media (max-width: 768px) {
+            nav ul {
+                flex-direction: row; /* ترتيب عمودي للروابط */
+                align-items: center; /* توسيط */
+            }
+
+            nav ul li {
+                margin: 10px 0; /* مسافة بين العناصر */
+            }
+
+            .contact-info {
+                padding: 15px; /* تقليل الحشوة على الشاشات الصغيرة */
+            }
+        }
 </style>
 <body>
     <header>
@@ -260,7 +274,7 @@ nav ul li a {
         
         <h3>أو يمكنك ملء النموذج أدناه للتواصل:</h3>
 
-        <form action="submit_contact_form.html" method="POST">
+        <form action="https://formspree.io/f/xgvolrko" method="POST">
             <label for="name">الاسم:</label>
             <input type="text" id="name" name="name" required>
 
